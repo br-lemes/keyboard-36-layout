@@ -1,0 +1,87 @@
+(defcfg
+	input (device-file "/dev/input/by-id/usb-SZH_USB_Keyboard-event-kbd")
+	output (uinput-sink "KMonad 36")
+	allow-cmd true
+	fallthrough true
+)
+
+(defsrc
+	1 2 3 4 5  8 9 0 - =
+	q w e r t  i o p [ ]
+	a s d f g  k l ; ' \
+	    c v b  m , .
+)
+
+(defalias
+	q (tap-hold 300 q (tap-macro esc XX))
+	w (tap-hold 300 w (tap-macro ` XX))
+	e (tap-hold 300 f (tap-macro ' XX))
+	r (tap-hold 300 p (tap-macro [ XX))
+	t (tap-hold 300 b (tap-macro 102d XX))
+
+	y (tap-hold 300 j (tap-macro ] XX))
+	u (tap-hold 300 l (tap-macro \ XX))
+	i (tap-hold 300 u (tap-macro - XX))
+	o (tap-hold 300 y (tap-macro = XX))
+	p (tap-hold 300 ; (tap-macro / XX))
+
+	a (tap-hold-next-release 300 a met :timeout-button (tap-next 1 met))
+	s (tap-hold-next-release 300 r alt :timeout-button (tap-next 2 alt))
+	d (tap-hold-next-release 300 s ctl :timeout-button (tap-next 3 ctl))
+	f (tap-hold-next-release 300 t sft :timeout-button (tap-next 4 sft))
+	g (tap-hold 300 g (tap-macro 5 XX))
+
+	h (tap-hold 300 m (tap-macro 6 XX))
+	j (tap-hold-next-release 300 n sft :timeout-button (tap-next 7 sft))
+	k (tap-hold-next-release 300 e ctl :timeout-button (tap-next 8 ctl))
+	l (tap-hold-next-release 300 i alt :timeout-button (tap-next 9 alt))
+	; (tap-hold-next-release 300 o met :timeout-button (tap-next 0 met))
+
+	z (tap-hold 300 z (tap-macro f1 XX))
+	x (tap-hold 300 x (tap-macro f2 XX))
+	c (tap-hold 300 c (tap-macro f3 XX))
+	v (tap-hold 300 d (tap-macro f4 XX))
+	b (tap-hold 300 v (tap-macro f5 XX))
+
+	n (tap-hold 300 k (tap-macro f6 XX))
+	m (tap-hold 300 h (tap-macro f7 XX))
+	, (tap-hold 300 , (tap-macro f8 XX))
+	. (tap-hold 300 . (tap-macro f9 XX))
+	/ (tap-hold 300 ro (tap-macro f10 XX))
+
+	mo (around ctl /)
+
+	gr (cmd-button "$HOME/.config/kmonad/color green1" "$HOME/.config/kmonad/color")
+	re (cmd-button "$HOME/.config/kmonad/color red1" "$HOME/.config/kmonad/color")
+
+	na (tap-hold-next-release 300 spc (around @gr (layer-toggle nav)))
+	nu (tap-hold-next-release 300 tab (around @re (layer-toggle num)))
+)
+
+(deflayer base
+	@q  @w  @e  @r  @t    @y  @u  @i  @o  @p
+	@a  @s  @d  @f  @g    @h  @j  @k  @l  @;
+	@z  @x  @c  @v  @b    @n  @m  @,  @.  @/
+	        ctl @na @nu   ret bks sft
+)
+
+(deflayer nav
+	_   _   _   _   _     pgup home up   end  ins
+	_   _   _   _   _     pgdn lft  down rght del
+	_   _   _   _   _     f11  f12  @mo  sys  caps
+	        _   XX  tab   _    _    _
+)
+
+(deflayer num
+	_   _   _   _   _     +   7   8   9   *
+	_   _   _   _   _     -   4   5   6   .
+	_   _   _   _   _     0   1   2   3   ro
+	        _   spc XX    _   _   _
+)
+
+(deflayer empty
+	XX  XX  XX  XX  XX    XX  XX  XX  XX  XX
+	XX  XX  XX  XX  XX    XX  XX  XX  XX  XX
+	XX  XX  XX  XX  XX    XX  XX  XX  XX  XX
+	        XX  XX  XX    XX  XX  XX
+)
