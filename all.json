@@ -1,0 +1,12 @@
+["Q\n\n\nEsc","W\n\n\n'\n\n\n\n\"","E\n\n\n~\n\n\n\n^","R\n\n\n´\n\n\n\n`","T\n\n\n\\\n\n\n\n|",{x:1},"Y\n\n\n[\n\n\n\n{","U\n\n\n]\n\n\n\n}","I\n\n\n-\n\n\n\n_","O\n\n\n=\n\n\n\n+","P\n\n\n;\n\n\n\n:"],
+["A\n\n\n1\nWin\n\n\n!","S\n\n\n2\nAlt\n\n\n@","D\n\n\n3\nCtrl\n\n\n#",{n:true},"F\n\n\n4\nShift\n\n\n$","G\n\n\n5\n\n\n\n%",{x:1},"H\n\n\n6\n\n\n\n¨",{n:true},"J\n\n\n7\nShift\n\n\n&","K\n\n\n8\nCtrl\n\n\n*","L\n\n\n9\nAlt\n\n\n(","Ç\n\n\n0\nWin\n\n\n)"],
+["Z\n\n\nF1","X\n\n\nF2","C\n\n\nF3","V\n\n\nF4","B\n\n\nF5",{x:1},"N\n\n\nF6","M\n\n\nF7","<\n\n\nF8\n\n\n,",">\n\n\nF9\n\n\n.","?\n\n\nF10\n\n\n/"],
+[{x:2,a:7},"Ctrl",{n:true},"Space\n\n\n\nNav","Tab\n\n\n\nNum",{x:1},"Enter",{n:true},"Back Space","Shift"],
+[{y:0.2,a:4},"Q\n\n\nEsc","W\n\n\n'\n\n\n\n\"","E\n\n\n~\n\n\n\n^","R\n\n\n´\n\n\n\n`","T\n\n\n\\\n\n\n\n|",{x:1,a:7},"PgUp","Home","<i class='fa fa-arrow-up'></i>","End","Insert"],
+[{a:4},"A\n\n\n1\nWin\n\n\n!","S\n\n\n2\nAlt\n\n\n@","D\n\n\n3\nCtrl\n\n\n#",{n:true},"F\n\n\n4\nShift\n\n\n$","G\n\n\n5\n\n\n\n%",{x:1,a:7},"PgDn",{n:true},"<i class='fa fa-arrow-left'></i>","<i class='fa fa-arrow-down'></i>","<i class='fa fa-arrow-right'></i>","Delete"],
+[{a:4},"Z\n\n\nF1","X\n\n\nF2","C\n\n\nF3","V\n\n\nF4","B\n\n\nF5",{x:1,a:7},"F11","F12","Ctrl + ;","PrtSc","Caps Lock"],
+[{x:2},"Ctrl",{g:true},"",{g:false},"Tab",{x:1},"Enter",{n:true},"Back Space","Shift"],
+[{y:0.2,a:4},"Q\n\n\nEsc","W\n\n\n'\n\n\n\n\"","E\n\n\n~\n\n\n\n^","R\n\n\n´\n\n\n\n`","T\n\n\n\\\n\n\n\n|",{x:1,a:7},"+","7","8","9","*"],
+[{a:4},"A\n\n\n1\nWin\n\n\n!","S\n\n\n2\nAlt\n\n\n@","D\n\n\n3\nCtrl\n\n\n#",{n:true},"F\n\n\n4\nShift\n\n\n$","G\n\n\n5\n\n\n\n%",{x:1,a:7},"-",{n:true},"4","5","6","."],
+[{a:4},"Z\n\n\nF1","X\n\n\nF2","C\n\n\nF3","V\n\n\nF4","B\n\n\nF5",{x:1,a:7},"0","1","2","3","/"],
+[{x:2},"Ctrl",{n:true},"Space",{g:true},"",{x:1,g:false},"Enter",{n:true},"Back Space","Shift"]

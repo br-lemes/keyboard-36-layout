@@ -1,0 +1,4 @@
+["Q\n\n\nEsc","W\n\n\n'\n\n\n\n\"","E\n\n\n~\n\n\n\n^","R\n\n\n´\n\n\n\n`","T\n\n\n\\\n\n\n\n|",{x:1,a:7},"+","7","8","9","*"],
+[{a:4},"A\n\n\n1\nWin\n\n\n!","S\n\n\n2\nAlt\n\n\n@","D\n\n\n3\nCtrl\n\n\n#",{n:true},"F\n\n\n4\nShift\n\n\n$","G\n\n\n5\n\n\n\n%",{x:1,a:7},"-",{n:true},"4","5","6","."],
+[{a:4},"Z\n\n\nF1","X\n\n\nF2","C\n\n\nF3","V\n\n\nF4","B\n\n\nF5",{x:1,a:7},"0","1","2","3","/"],
+[{x:2},"Ctrl",{n:true},"Space",{g:true},"",{x:1,g:false},"Enter",{n:true},"Back Space","Shift"]
